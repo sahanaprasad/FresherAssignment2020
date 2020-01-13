@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.util.*;
 import java.io.Serializable;
 
@@ -48,7 +50,7 @@ public class User implements Serializable{
 
     @Override
     public String toString() {
-        return "User [name=" + name + ", address=" + address + ", age=" + age + ", roll_number=" + rollNumber + ", courses=" + courses + "]";
+        return "Assignment2.User [name=" + name + ", address=" + address + ", age=" + age + ", roll_number=" + rollNumber + ", courses=" + courses + "]";
     }
         static class NameComparator implements Comparator<User> {
         @Override
@@ -82,12 +84,12 @@ public class User implements Serializable{
         }
     }
    /* @Override
-    public int compareTo(User o) {
-        return (((User) o).getName()).compareTo(this.getName());
+    public int compareTo(Assignment2.User o) {
+        return (((Assignment2.User) o).getName()).compareTo(this.getName());
     }*/
-//   static class ageComparator implements Comparator<User> {
+//   static class ageComparator implements Comparator<Assignment2.User> {
 //       @Override
-//       public int compare(User o1, User o2) {
+//       public int compare(Assignment2.User o1, Assignment2.User o2) {
 //           return o1.getAge().compareTo(o2.getName());
 //       }
 
