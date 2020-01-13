@@ -1,3 +1,5 @@
+package Assignment2;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -9,8 +11,8 @@ public class Main {
         int rollNumber;
         Scanner input=new Scanner(System.in);
         do{
-            System.out.println("Choose any one of the options\n1.Add User details.");
-            System.out.println("2.Display User details.\n3.Delete User details\n4.Save User details.\n5.Exit");
+            System.out.println("Choose any one of the options\n1.Add Assignment2.User details.");
+            System.out.println("2.Display Assignment2.User details.\n3.Delete Assignment2.User details\n4.Save Assignment2.User details.\n5.Exit");
 
             choice=input.nextInt();
 

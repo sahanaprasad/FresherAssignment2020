@@ -1,4 +1,5 @@
-import javax.xml.stream.events.Characters;
+package Assignment2;
+
 import java.io.*;
 import java.util.*;
 
@@ -14,7 +15,7 @@ public class CreateUser {
 
     public void readUser() {
         User user = new User();
-        System.out.println("Enter the User Details: ");
+        System.out.println("Enter the Assignment2.User Details: ");
         user = checkUserInput(user);
        // System.out.println("hello");
         addUser(user);
