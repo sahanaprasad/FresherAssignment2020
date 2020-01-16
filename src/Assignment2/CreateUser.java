@@ -10,41 +10,24 @@ public class CreateUser {
 
     CreateUser() {
         scan = new Scanner(System.in);
-
     }
 
     public void readUser() {
         User user = new User();
         System.out.println("Enter the Assignment2.User Details: ");
         user = checkUserInput(user);
-       // System.out.println("hello");
         addUser(user);
         Collections.sort(readingUsers, new User.NameComparator());
-        //Collections.sort(readingUsers);
-        //users.add(user);
-        //System.out.println("user  added successfully");
     }
 
     void addUser(User user) {
-       // System.out.println("hello2");
-        if (user.getName().equals(""))
-            return;
-        if (user.getAddress().equals(""))
-            return;
-        if (user.getAge() < 0)
-            return;
-        if (user.getRollNumber() < 0)
-            return;
-
         readingUsers.add(user);
-
         System.out.println("user added to the list");
     }
 
     public User checkUserInput(User user1) {
         System.out.println("enter the name");
         String name = scan.next();
-
         System.out.println("enter the address");
         String address = scan.next();
         System.out.println("enter the age");
@@ -53,15 +36,11 @@ public class CreateUser {
         int rollnumber = scan.nextInt();
         System.out.println("enter the courses(minimum 4 courses):A,B,C,D,E,F");
         String str = scan.next();
-
-
         List<String> ch = Arrays.asList(str.split(","));
         if (ch.size() < 4) {
             System.out.println("enter at least 4 courses");
             str = scan.next();
         }
-
-
         user1.setName(name);
         user1.setAge(age);
         user1.setAddress(address);
@@ -83,10 +62,9 @@ public class CreateUser {
         System.out.println("user not found");
     }
     public void displayDetails() {
-//
+
         System.out.println("Name   \t\tAGE \t\tROLL NUMBER \t\tCOURSES");
         System.out.println("----\t\t-----\t\t----------\t\t-----------");
-        //System.out.println(users.size());
         for (User user1 : readingUsers)
             System.out.println(user1.getName() + "\t\t" + user1.getAge() + "\t\t\t" + user1.getRollNumber() + "\t\t\t\t" + user1.getCourses());
     }
@@ -109,29 +87,17 @@ public class CreateUser {
     public void saveUserDetails() {
         String filename = "file1.ser";
         try {
-            //Saving of object in a file
-            //System.out.println("hellosave");
             FileOutputStream file = new FileOutputStream(filename);
             ObjectOutputStream out = new ObjectOutputStream(file);
-           // System.out.println(readingUsers.size());
-            // Method for serialization of object
-
             System.out.println("sorted");
             out.writeObject(readingUsers);
-            //System.out.println(readingUsers.size());
-
             out.close();
             file.close();
-
             System.out.println("Object has been serialized");
-
         } catch (IOException ex) {
             System.out.println("IOException is caught");
         }
     }
-
-
-
     public void  readFromFile() throws IOException, ClassNotFoundException {
         File toRead=new File("file1.ser");
         FileInputStream f=new FileInputStream(toRead);
@@ -139,10 +105,8 @@ public class CreateUser {
         readingUsers = (List<User>)o.readObject();
         System.out.println("Name \t\tAGE \t\tROLL NUMBER \t\tCOURSES");
         System.out.println("----\t\t-----\t\t----------\t\t-----------");
-
         for(User user1:readingUsers)
         {
-
             System.out.println(user1.getName() + "\t\t" + user1.getAge() + "\t\t\t" + user1.getRollNumber() + "\t\t\t\t" + user1.getCourses());
         }
     }

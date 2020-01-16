@@ -21,15 +21,17 @@ public class Main {
             {
                 case 1: createuser.readUser();
                         break;
+                case 2:createuser.displayDetails();
+                       createuser.sorting();
+                       break;
                 case 3: System.out.println(("\"enter the roll number\""));
                         rollNumber=input.nextInt();
                         createuser.deleteDetails(rollNumber);
                         break;
                 case 4: createuser.saveUserDetails();
                         break;
-                case 2:createuser.displayDetails();
-                        createuser.sorting();
-                        break;
+                default: break;
+
             }
         }while(choice!=5);
         System.out.println("do you want to save the changes?(y/n)");
@@ -40,9 +42,5 @@ public class Main {
             System.out.println("changes have been successfully saved ");
 
         }
-
-
     }
-
-
 }

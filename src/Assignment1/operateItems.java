@@ -1,11 +1,8 @@
 package Assignment1;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
-
 public class operateItems {
-
     private List<Item> items;
     private Scanner input;
     //constructor
@@ -21,7 +18,6 @@ public class operateItems {
         addItem(item);
         System.out.println("Assignment1.Item added successfully");
     }
-
     String addItem(Item item) {
         if(item.getName().equals(""))
             return ("No name entered");
