@@ -1,4 +1,4 @@
-package Assignment04;
+package Assignment4;
 
 class CalculateTax {
 
@@ -16,7 +16,7 @@ class CalculateTax {
                 continue;
             }
             Item item = thread.items.get(index);
-         thread.sync = false;
+            thread.sync = false;
             double tax = 0;
             switch (item.getType()) {
                 case "RAW":

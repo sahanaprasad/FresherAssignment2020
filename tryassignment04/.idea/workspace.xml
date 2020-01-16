@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8de8815-3338-454c-bb11-41ca772c6f97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Assignment2" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignment04/CalculateTax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignment04/CalculateTax.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignment04/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignment04/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Assignment04/connectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Assignment04/connectDB.java" afterDir="false" />
-    </list>
+    <list default="true" id="d8de8815-3338-454c-bb11-41ca772c6f97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +11,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,6 +94,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="474" y="308" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1579180033941">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="474" y="308" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.800@0.0.1280.800" timestamp="1579180033941" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1579168494789">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
