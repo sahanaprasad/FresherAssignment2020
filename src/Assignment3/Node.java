@@ -13,7 +13,6 @@ public class Node {
     Map<Integer, Node>children;
     Map<Integer, Node> parents;
 
-
     public Node(int id, String name) {
         this.id = id;
         this.name = name;

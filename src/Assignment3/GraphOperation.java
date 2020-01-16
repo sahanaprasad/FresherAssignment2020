@@ -56,12 +56,9 @@ public class GraphOperation {
         }
 
     }
-
     public void deleteDependency(int pid, int cid) {
-
         graph.get(pid).children.remove(cid, graph.get(cid));
         graph.get(cid).parents.remove(pid, graph.get(pid));
-
     }
 
     public void deleteNode() {

@@ -59,6 +59,7 @@ public class Driver {
                         break;
                 case 8: opt.addNode();
                         break;
+                default: break;
 
             }}while(choice!=9);
 
