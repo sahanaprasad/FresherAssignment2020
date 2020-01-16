@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
 
         String choice="";
-        createItems items=new createItems();
+        operateItems items=new operateItems();
         System.out.println("-name <first item name>\n-price <price of first item>\n -quantity <quantity of first item>\n -type <type of first item>");
         do{
 

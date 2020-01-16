@@ -20,27 +20,27 @@ public class createItemsTest {
     @Test
     public void checkItem1()
     {
-        assertEquals("No name entered",new createItems().addItem(it1));
+        assertEquals("No name entered",new operateItems().addItem(it1));
 
     }
     @Test
     public void checkItem2()
     {
-        assertEquals("item added succesfully",new createItems().addItem(it2));
+        assertEquals("item added succesfully",new operateItems().addItem(it2));
 
     }
     @Test
     public void checkItem3()
     {
 
-        assertEquals("item added successfully",new createItems().addItem(it3));
+        assertEquals("item added successfully",new operateItems().addItem(it3));
 
     }
     @Test
     public void checkItem4()
     {
 
-        assertEquals("item added successfully",new createItems().addItem(it4));
+        assertEquals("item added successfully",new operateItems().addItem(it4));
 
     }
 

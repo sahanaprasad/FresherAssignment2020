@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 
-public class createItems {
+public class operateItems {
 
     private List<Item> items;
     private Scanner input;
     //constructor
-    createItems(){
+    operateItems(){
         input = new Scanner(System.in);
         items = new ArrayList<>();
     }
@@ -51,55 +51,23 @@ public class createItems {
     private void checkInput(Item item) {
         String name="";
         Type value = Type.RAW;
-
         double price = 0;
-        double quantity = 0;
+        int quantity = 0;
 
         for (int i = 0; i < 4; i++) {
             System.out.print("--> ");
             String cmd = input.next();
             if (cmd.equals("-name") && input.hasNext()) {
-                if (item.isNameFlag()) {
-                    System.out.println("Name is already added...");
-                    i--;
-                    input.next();
-                    continue;
-                }
                 item.setName(input.nextLine());
-                //name=input.nextLine();
-                item.setNameFlag(true);
                 System.out.println("Name added");
             } else if (cmd.equals("-price") && input.hasNextDouble()) {
-                if (item.isPriceFlag()) {
-                    System.out.println("Price is already added...");
-                    i--;
-                    input.next();
-                    continue;
-                }
                 item.setPrice(input.nextDouble());
-                item.setPriceFlag(true);
                 System.out.println("Price added");
             } else if (cmd.equals("-quantity") && input.hasNextDouble()) {
-                if (item.isQuantityFlag()) {
-                    System.out.println("Quantity is already added...");
-                    i--;
-                    input.next();
-                    continue;
-                }
-                item.setQuantity(input.nextDouble());
-                item.setQuantityFlag(true);
+                item.setQuantity(input.nextInt());
                 System.out.println("Quantity added");
             } else if (cmd.equals("-type") && input.hasNext()) {
-                if (item.isTypeFlag()) {
-                    System.out.println("Type is already added...");
-                    i--;
-                    input.next();
-                    continue;
-                }
-                // tp.valueOf(scan.next());
-                //  tp=scan.next();
                 item.setType(Type.valueOf(input.next().toUpperCase()));
-                item.setTypeFlag(true);
                 System.out.println("Type added");
             } else {
                 System.out.println("Please enter a valid input...");
@@ -110,6 +78,5 @@ public class createItems {
         }
         item.setTax();
         item.setFinalPrice();
-
     }
 }

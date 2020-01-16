@@ -5,16 +5,16 @@ public class Item {
     private String name;
     private Type type;
     private double price;
-    private double quantity, tax;
+    private double tax;
+    int quantity;
     private double finalPrice;
     boolean nameFlag, priceFlag, quantityFlag, typeFlag;
-    public Item() {
-        this.priceFlag = false;
-        this.nameFlag = false;
-        this.quantityFlag = false;
-        this.typeFlag = false;
+    public Item()
+    {
+
     }
-    public Item(String name, Type type, double price, double quantity, double tax) {
+
+    public Item(String name, Type type, double price, int quantity, double tax) {
         this.name = name;
         this.type = type;
         this.price = price;
@@ -30,40 +30,6 @@ public class Item {
         this.finalPrice =(tax+price*quantity);
     }
 
-    /*public item(String name, Type type, double price, double quantity, double tax) {
-        this.name = name;
-        this.type = type;
-        this.price = price;
-        this.quantity = quantity;
-        this.tax = tax;
-    }
-
-    public void  assignitem(String iname, Type itype, double iprice, double iquantity ){
-        name=iname;
-        type=itype;
-        price=iprice;
-        quantity=iquantity;
-        tax=calculatetax();
-    }*/
-
-    /*public void  acceptitems(String iname, Type itype, double iprice, double iquantity ){
-        this.name=iname;
-        this.type=itype;
-        this.price=iprice;
-        this.quantity=iquantity;
-        this.tax=calculatetax();
-    }*/
-    /* public void accepttype(String itype)
-      {
-          if(itype.equals("Raw")||itype.equals("Manufactured")||itype.equals("imported"))
-          {
-              this.type=itype;
-          }
-          else
-          {
-              System.out.println("invalid type");
-          }
-      }*/
     public String getName() {
         return name;
     }
@@ -100,7 +66,7 @@ public class Item {
         this.price = price;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
@@ -126,40 +92,9 @@ public class Item {
                 else itax += 0.05 * (price + itax);
                 break;
         }
-    return (itax*quantity);
+    return (itax*(double)quantity);
     }
 
-    public boolean isPriceFlag() {
-        return priceFlag;
-    }
-
-    public void setPriceFlag(boolean priceFlag) {
-        this.priceFlag = priceFlag;
-    }
-
-    public boolean isNameFlag() {
-        return nameFlag;
-    }
-
-    public void setNameFlag(boolean nameFlag) {
-        this.nameFlag = nameFlag;
-    }
-
-    public boolean isQuantityFlag() {
-        return quantityFlag;
-    }
-
-    public void setQuantityFlag(boolean quantityFlag) {
-        this.quantityFlag = quantityFlag;
-    }
-
-    public boolean isTypeFlag() {
-        return typeFlag;
-    }
-
-    public void setTypeFlag(boolean typeFlag) {
-        this.typeFlag = typeFlag;
-    }
     @Override
     public String toString() {
         return "name=" + name + ", price=" + price + ", SalesTax=" + tax + ", FinalPrice=" + finalPrice;

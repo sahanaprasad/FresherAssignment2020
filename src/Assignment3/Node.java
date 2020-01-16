@@ -13,25 +13,6 @@ public class Node {
     Map<Integer, Node>children;
     Map<Integer, Node> parents;
 
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public Map<Integer, String> getInformation() {
-        return information;
-    }
-
-    public Map<Integer, Node> getChildren() {
-        return children;
-    }
-
-    public Map<Integer, Node> getParents() {
-        return parents;
-    }
 
     public Node(int id, String name) {
         this.id = id;
