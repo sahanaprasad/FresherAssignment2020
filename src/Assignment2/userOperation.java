@@ -3,12 +3,12 @@ package Assignment2;
 import java.io.*;
 import java.util.*;
 
-public class CreateUser {
+public class userOperation {
     List<User> users;
     private Scanner scan;
     List<User> readingUsers=new ArrayList<>();
 
-    CreateUser() {
+    userOperation() {
         scan = new Scanner(System.in);
     }
 

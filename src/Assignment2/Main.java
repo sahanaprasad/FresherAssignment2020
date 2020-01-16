@@ -1,13 +1,12 @@
 package Assignment2;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String [] args) throws IOException, ClassNotFoundException {
         int choice;
-        CreateUser createuser=new CreateUser();
+        userOperation createuser=new userOperation();
         createuser.readFromFile();
         int rollNumber;
         Scanner input=new Scanner(System.in);
