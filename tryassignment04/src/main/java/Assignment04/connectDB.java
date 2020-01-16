@@ -32,7 +32,7 @@ public class connectDB {
                 Item item = new Item();
                 item.setName(rs.getString(1));
                 item.setType(rs.getString(2));
-                item.setQuantity(rs.getDouble(4));
+                item.setQuantity(rs.getInt(4));
                 item.setPrice(rs.getDouble(3));
                 while (thread.sync) ;
                 thread.sync = true;

@@ -1,50 +1,13 @@
 package Assignment04;
-
-//
-// enum Type{RAW,IMPORTED,MANUFACTURED, DEFAULT}
 public class Item {
     private String name, type;
-    private double price, tax, quantity;
-    private boolean priceFlag, nameFlag, quantityFlag, typeFlag;
+    private double price, tax;
+    int quantity;
 
     public Item() {
-        this.priceFlag = false;
-        this.nameFlag = false;
-        this.quantityFlag = false;
-        this.typeFlag = false;
+
     }
 
-    public boolean isPriceFlag() {
-        return priceFlag;
-    }
-
-    public void setPriceFlag(boolean priceFlag) {
-        this.priceFlag = priceFlag;
-    }
-
-    public boolean isNameFlag() {
-        return nameFlag;
-    }
-
-    public void setNameFlag(boolean nameFlag) {
-        this.nameFlag = nameFlag;
-    }
-
-    public boolean isQuantityFlag() {
-        return quantityFlag;
-    }
-
-    public void setQuantityFlag(boolean quantityFlag) {
-        this.quantityFlag = quantityFlag;
-    }
-
-    public boolean isTypeFlag() {
-        return typeFlag;
-    }
-
-    public void setTypeFlag(boolean typeFlag) {
-        this.typeFlag = typeFlag;
-    }
 
     public String getName() {
         return name;
@@ -82,7 +45,7 @@ public class Item {
         return quantity;
     }
 
-    public void setQuantity(double quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 }

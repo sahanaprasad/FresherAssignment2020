@@ -7,7 +7,6 @@ class CalculateTax {
         while (true) {
             System.out.print("");
             if (index == thread.items.size() && thread.finish) {
-               // System.out.println("Tax calculation completed");
                 break;
             }
             while(thread.sync) ;
@@ -42,11 +41,10 @@ class CalculateTax {
             thread.sync = false;
         }
     }
-
     private void displayDetails(Item item, int index) {
         System.out.println("CALCULATED TAX FOR ITEM " + index + "\t=>\tNAME: " + item.getName() + "\tPRICE: " +
                 item.getPrice() + "\tTYPE: " + item.getType() + "\tTAX: " + item.getTax() + "\tFINAL PRICE: " +
-                (item.getPrice() + item.getTax())*item.getQuantity());
+                (item.getPrice() + item.getTax())*(double)item.getQuantity());
     }
 
 }
