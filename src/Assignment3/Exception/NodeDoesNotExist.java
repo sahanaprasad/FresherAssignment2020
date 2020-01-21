@@ -1,9 +1,7 @@
-package Assignment3.Exception;
+package assignment3.Exception;
 
 public class NodeDoesNotExist extends Exception {
-
-
-    public NodeDoesNotExist(String message) {
-        super(message);
-    }
+  public NodeDoesNotExist(String message) {
+    super(message);
+  }
 }

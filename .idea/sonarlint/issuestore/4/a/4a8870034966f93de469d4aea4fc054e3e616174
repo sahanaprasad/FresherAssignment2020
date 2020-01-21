@@ -1,0 +1,9 @@
+
+?squid:S1148-"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+msquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(Çœü©
+Isquid:S4925"-Remove this "Class.forName()", it is useless.(¹µÖÁüÿÿÿÿ
+T
+squid:S106)"9Replace this use of System.out or System.err by a logger.(°±†Ãûÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(°îÿ×ýÿÿÿÿ

@@ -1,7 +1,7 @@
-package Assignment3;
+package assignment3;
 
-import Assignment3.Exception.NodeDoesNotExist;
-import Assignment3.GraphOperation;
+import assignment3.Exception.NodeAlreadyExists;
+import assignment3.Exception.NodeDoesNotExist;
 
 import java.util.Scanner;
 
@@ -57,11 +57,13 @@ public class Driver {
                         break;
                 case 7: opt.addDependency();
                         break;
-                case 8: opt.addNode();
+                case 8: try {opt.addNode();}
+                        catch (NodeAlreadyExists e) { System.out.println(e.getMessage());}
                         break;
-                default: break;
+                default: System.out.println("Enter a valid input");break;
 
-            }}while(choice!=9);
+            }
+          }while(choice!=9);
 
 
     }
