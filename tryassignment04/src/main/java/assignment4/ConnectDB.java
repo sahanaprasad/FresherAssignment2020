@@ -8,10 +8,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class connectDB {
+public class ConnectDB {
     private Connection conn;
     List<Item> items=new ArrayList<>();
-    public connectDB(){
+    public ConnectDB(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {

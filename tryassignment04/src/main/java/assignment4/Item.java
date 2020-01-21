@@ -1,11 +1,10 @@
 package Assignment04;
 public class Item {
+
     private String name, type;
     private double price, tax;
     int quantity;
-
     public Item() {
-
     }
 
 

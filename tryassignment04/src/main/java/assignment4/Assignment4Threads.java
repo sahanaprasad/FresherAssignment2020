@@ -2,12 +2,12 @@ package Assignment04;
 
 import java.util.ArrayList;
 import java.util.List;
-public class thread{
+public class Assignment4Threads {
     public static List<Item> items;
     public static boolean sync;
     public static boolean finish;
 
-    thread(){
+    Assignment4Threads(){
         items = new ArrayList<>();
         sync = false;
         finish = false;
